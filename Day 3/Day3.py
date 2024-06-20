@@ -55,6 +55,7 @@ if checkpoint1 == "left":
         print(gameover)
     else:
         checkpoint3 = input("you found three doors 'yellow' : 'red' : 'blue' \nchoose which door you want to go through :")
+        checkpoint3 = checkpoint3.lower()
         if(checkpoint3 == "yellow"):
             print("you found the treasure, CONGRATULATION")
             print(tresure_chest)
