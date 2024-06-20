@@ -45,16 +45,16 @@ print("****************************************************************")
 print("welcome to treasure island, your mission is to find the treasure")
 print("****************************************************************")
 
-checkpoint1 = input("You're running from the pirates, Do you want to go left or right?:\nhint!: right is a water fall\nChoose:")
+checkpoint1 = input("You're running from the pirates, Do you want to go 'left' or 'right'?:\nhint!: right is a water fall\nChoose: ")
 checkpoint1 = checkpoint1.lower()
 if checkpoint1 == "left":
-    checkpoint2 = input("you suddenly face a river swim or wait:\n")
+    checkpoint2 = input("you suddenly face a river 'swim' or 'wait':\n")
     checkpoint2 = checkpoint2.lower()
     if(checkpoint2 == "swim"):
         print("you drowned in the river\nGAMEOVER!!")
         print(gameover)
     else:
-        checkpoint3 = input("you found three doors yellow : red : blue \nchoose which door you want to go through :")
+        checkpoint3 = input("you found three doors 'yellow' : 'red' : 'blue' \nchoose which door you want to go through :")
         if(checkpoint3 == "yellow"):
             print("you found the treasure, CONGRATULATION")
             print(tresure_chest)
@@ -64,4 +64,3 @@ if checkpoint1 == "left":
 else:
     print("You have fallen in the water fall game over!!")
     print(gameover)
-
